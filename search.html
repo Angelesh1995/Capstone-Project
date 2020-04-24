@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/05949b9b9b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <title>ZATTIX - Search Page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-links-container">
+        <div class="nav-links">
+            <a class="navbar-brand text-uppercase font-weight-bold" href="https://raw.githack.com/Angelesh1995/Capstone-Project/development/index.html">zattix</a>
+            <div>
+              <a  class="nav-element-home" href="https://raw.githack.com/Angelesh1995/Capstone-Project/development/index.html"><i class="fas fa-home mr-3"></i>
+              <span class="text-uppercase">home</span></a>
+            </div>
+            <div>
+             <a class="nav-element" href="https://raw.githack.com/Angelesh1995/Capstone-Project/development/index.html"><i class="fas fa-cubes mr-3"></i>
+              <span class="text-uppercase">collections</span></a> 
+            </div>
+            <div>
+             <a class="nav-element" href="https://raw.githack.com/Angelesh1995/Capstone-Project/development/index.html"><i class="fas fa-shopping-cart mr-3"></i>
+              <span class="text-uppercase">purchase list</span></a> 
+            </div>
+            <div class="nav-element">
+              <span class="text-uppercase text-light">post an ad</span>
+            </div>
+        </div>
+        <div class="nav-auth">
+          <i class="fas fa-envelope text-secondary"></i>
+          <span class="text-uppercase">John Doe</span>
+        </div>
+      </div>
+    </nav>
+    <div class="search-section-container border-bottom">
+      <div class="search-section-heading">
+        <h1 class="zattix">ZATTIX</h1>
+        <h3>Buying and selling couldn't be simpler than this!</h3>
+      </div>
+      <div class="search-fields-container">
+        <input type="text" name="department" id="search-department" class="search-text-input"/>
+        <input type="text" name="terms" id="search-terms" class="search-text-input"/>
+        <input type="text" name="location" id="search-location" class="search-text-input"/>
+        <a href="https://raw.githack.com/Angelesh1995/Capstone-Project/development/index.html"
+          class="text-white pt-3">Search</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid search-page-content">
+      <div class="row">
+        <div class="col-12 col-md-3 search-filters-container d-flex flex-column">
+          <div class="search-filters-subsection d-flex">
+            <div class="search-features">
+              <input type="radio" name="item-condition" id="condition-new" checked/>
+              <label for="condition-used" class="pb-2">New</label>
+            </div>
+            <div class="search-features">
+              <input type="radio" name="item-condition" id="condition-used"/>
+              <label for="condition-used" class="pb-2">Used</label>
+            </div>
+          </div>
+          <div class="filters-subsection-heading">
+            <h4 class="font-weight-bold pb-2">Material</h4>
+          </div>
+          <div class="search-filters-subsection d-flex">
+            <div>
+              <input type="checkbox" name="type-leather" id="leather" checked/>
+              <label for="leather" class="pb-2">Leather</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-organic" id="organic"/>
+              <label for="organic" class="pb-2">Organic</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-plastic" id="plastic"/>
+              <label for="plastic" class="pb-2">Plastic</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-wool" id="wool" />
+              <label for="wool" class="pb-2">Wool</label>
+            </div>
+          </div>
+          <div class="filters-subsection-heading">
+            <h4 class="font-weight-bold pb-2">Production Year</h4>
+          </div>
+          <div class="search-filters-subsection d-flex">
+            <div>
+              <input type="checkbox" name="type-dur1" id="year1"/>
+              <label for="year1" class="pb-2">none</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-dur2" id="year2"/>
+              <label for="year2" class="pb-2">2019</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-dur3" id="year3" checked/>
+              <label for="year3" class="pb-2">2020</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-dur4" id="year4"/>
+              <label for="year4" class="pb-2">New Arrivals</label>
+            </div>
+          </div>
+          <div class="filters-subsection-heading">
+            <h4 class="font-weight-bold pb-2">Price</h4>
+          </div>
+          <div class="search-filters-subsection d-flex">
+            <div>
+              <input type="checkbox" name="type-price1" id="pricerange1"/>
+              <label for="pricerange1" class="pb-2">$10-$100</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-price2" id="pricerange2" checked/>
+              <label for="pricerange2" class="pb-2">$100-$500</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-price3" id="pricerange3"/>
+              <label for="pricerange3" class="pb-2">$500-$1000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type-price4" id="pricerange4"/>
+              <label for="pricerange4" class="pb-2">$1000+</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 search-results-container">
+          <div class="search-results-content d-flex-flex-column">
+            <div class="results-count">
+              <span>
+                <strong>240</strong> Results for <strong>"Purses"</strong> in
+                category <strong>Leather</strong>
+              </span>
+            </div>
+            <div class="results-item d-flex">
+              <div class="result-item-img-container">
+                <img
+                  src="https://www.renzocosta.com/ccstore/v1/images/?source=/file/v6819758199850805470/products/TFD0701261.1.jpg&height=300&width=300"
+                  alt="album cover" class="img-fluid">
+                <div class="img-slides">
+                  <span class="img-slide-left">
+                    <i class="fas fa-chevron-left"></i>
+                  </span>
+                  <span class="img-slide-right">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="result-description d-flex flex-column">
+                <span class="add-action">+</span>
+                <h3>Purse</h3>
+                <h4 class="pb-2">Renzo Costa</h4>
+                <p>
+                  This bag can be customized by you with different fabrics and accessories. You can pick out three
+                  coordinating fabrics you like or you can have the body of the bag in one color and another fabric for
+                  the rest of the bag that would compliment it nicely.
+                </p>
+                <span class="pt-3">
+                  <strong>Production Year: </strong> 2018
+                </span>
+                <div class="result-last-row d-flex">
+                  <span class="result-date">Apr 14, 2020</span>
+                  <button class="btn text-white">$170</button>
+                </div>
+              </div>
+            </div>
+            <div class="results-item d-flex">
+              <div class="result-item-img-container">
+                <img
+                  src="https://www.renzocosta.com/ccstore/v1/images/?source=/file/v2838262959874502874/products/TFD0700818.1.jpg&height=300&width=300"
+                  alt="album cover" class="img-fluid">
+                <div class="img-slides">
+                  <span class="img-slide-left">
+                    <i class="fas fa-chevron-left"></i>
+                  </span>
+                  <span class="img-slide-right">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="result-description d-flex flex-column">
+                <span class="add-action">+</span>
+                <h3>Purse</h3>
+                <h4 class="pb-2">Renzo Costa</h4>
+                <p>
+                  This bag can be customized by you with different fabrics and accessories. You can pick out three
+                  coordinating fabrics you like or you can have the body of the bag in one color and another fabric for
+                  the rest of the bag that would compliment it nicely.
+                </p>
+                <span class="pt-3">
+                  <strong>Production Year: </strong> 2019
+                </span>
+                <div class="result-last-row d-flex">
+                  <span class="result-date">Apr 14, 2020</span>
+                  <button class="btn text-white">$189</button>
+                </div>
+              </div>
+            </div>
+            <div class="results-item d-flex">
+              <div class="result-item-img-container">
+                <img
+                  src="https://www.renzocosta.com/ccstore/v1/images/?source=/file/v5753470870790646899/products/TID0744G02010800.1.jpg&height=300&width=300"
+                  alt="album cover" class="img-fluid">
+                <div class="img-slides">
+                  <span class="img-slide-left">
+                    <i class="fas fa-chevron-left"></i>
+                  </span>
+                  <span class="img-slide-right">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="result-description d-flex flex-column">
+                <span class="add-action">+</span>
+                <h3>Purse</h3>
+                <h4 class="pb-2">Renzo Costa</h4>
+                <p>
+                  This bag can be customized by you with different fabrics and accessories. You can pick out three
+                  coordinating fabrics you like or you can have the body of the bag in one color and another fabric for
+                  the rest of the bag that would compliment it nicely.
+                </p>
+                <span class="pt-3"><strong>Production Year: </strong> 2020</span>
+                <div class="result-last-row d-flex">
+                  <span class="result-date">Apr 14, 2020</span>
+                  <button class="btn text-white">$100</button>
+                </div>
+              </div>
+            </div>
+            <div class="results-item d-flex">
+              <div class="result-item-img-container">
+                <img
+                  src="https://www.renzocosta.com/ccstore/v1/images/?source=/file/v3012940239246398779/products/TID0704G02410800.1.jpg&height=300&width=300"
+                  alt="album cover" class="img-fluid">
+                <div class="img-slides">
+                  <span class="img-slide-left">
+                    <i class="fas fa-chevron-left"></i>
+                  </span>
+                  <span class="img-slide-right">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="result-description d-flex flex-column">
+                <span class="add-action">+</span>
+                <h3>Purse</h3>
+                <h4 class="pb-2">Renzo Costa</h4>
+                <p>
+                  This bag can be customized by you with different fabrics and accessories. You can pick out three
+                  coordinating fabrics you like or you can have the body of the bag in one color and another fabric for
+                  the rest of the bag that would compliment it nicely.
+                </p>
+                <span class="pt-3">
+                  <strong> New Arrival!</strong>
+                </span>
+                <div class="result-last-row d-flex">
+                  <span class="result-date">Apr 14, 2020</span>
+                  <button class="btn text-white">$240</button>
+                </div>
+              </div>
+            </div>
+            <div class="results-item d-flex">
+              <div class="result-item-img-container">
+                <img
+                  src="https://www.renzocosta.com/ccstore/v1/images/?source=/file/v9185018641373683161/products/TFD0701242.1.jpg&height=300&width=300"
+                  alt="album cover" class="img-fluid">
+                <div class="img-slides">
+                  <span class="img-slide-left">
+                    <i class="fas fa-chevron-left"></i>
+                  </span>
+                  <span class="img-slide-right">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="result-description d-flex flex-column">
+                <span class="add-action">+</span>
+                <h3 class="">Purse</h3>
+                <h4 class="pb-2">Renzo Costa</h4>
+                <p>
+                  This bag can be customized by you with different fabrics and accessories. You can pick out three
+                  coordinating fabrics you like or you can have the body of the bag in one color and another fabric for
+                  the rest of the bag that would compliment it nicely.
+                </p>
+                <span class="pt-3">
+                  <strong>New Arrival!</strong>
+                </span>
+                <div class="result-last-row d-flex">
+                  <span>Apr 14, 2020</span>
+                  <button class="btn text-white">$350</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-number-container d-flex">
+            <span class="page-number">1</span>
+            <span class="page-number">2</span>
+            <span class="page-number selected">3</span>
+            <span class="page-number">4</span>
+            <span class="page-number">5</span>
+            <span class="page-number">6</span>
+            <span class="page-number no-border">...</span>
+            <span class="page-number">7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="footer-content">
+      <div class="footer-company-info d-flex flex-column">
+        <div class="footer-logo-container d-flex">
+          <h3 class="font-weight-bold">zattix</h3>
+        </div>
+        <p>Zattix is the world's #1 luxury online store. All items are authenticated through a rigourous process. Enjoy
+          all the products that you can find here. We have a wide variety for women, men, and children.</p>
+      </div>
+      <div class="footer-links-container d-flex flex-column">
+        <div class="footer-links-heading">
+          <h3>categories</h3>
+        </div>
+        <div class="links-container">
+          <div class="links-column d-flex flex-column">
+            <a href="#">Contact Us</a>
+            <a href="#">Handbags</a>
+            <a href="#">Shoes</a>
+            <a href="#">Wallets</a>
+            <a href="#">Watches</a>
+            <a href="#">Dresses</a>
+          </div>
+          <div class="links-column d-flex flex-column">
+            <a href="#">Gucci</a>
+            <a href="#">Renzo Costa</a>
+            <a href="#">Bulova</a>
+            <a href="#">Milano</a>
+            <a href="#">Guess</a>
+            <a href="#">Prada</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-links-container d-flex flex-column">
+          <div class="footer-links-heading">
+            <h3>navigation</h3>
+          </div>
+          <div class="links-column d-flex flex-column">
+            <a href="#">Home</a>
+            <a href="#">Sign in</a>
+            <a href="#">Sign up</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">FAQ</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-settings-container d-flex flex-column">
+        <div class="footer-settings-item d-flex">
+          <span>country</span>
+          <button>Switzerland</button>
+        </div>
+        <div class="footer-settings-item d-flex">
+          <span>language</span>
+          <button>English</button>
+        </div>
+        <div class="footer-settings-item d-flex">
+          <span>currency</span>
+          <button>USD</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom pb-2">
+      <span class="footer-legal">Copyright© 2015 Zattix.com. All rights reserved. Designed by Mohammed Awad</span>
+      <div class="footer-social d-flex">
+        <i class="fab fa-yahoo fa-lg"></i>
+        <i class="fab fa-google fa-lg"></i>
+        <i class="fab fa-linkedin-in fa-lg"></i>
+        <i class="fab fa-twitter fa-lg"></i>
+        <i class="fab fa-facebook-f fa-lg"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scroll.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
